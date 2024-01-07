@@ -28,7 +28,7 @@ def draw_landmarks_on_image(rgb_image, detection_result):
     return annotated_image
 
 
-def model_mediapipe(img_path="D:\FAll_2023\project\pipeline\\test\img1.jpg", show_img=True, save_img=True):
+def model_mediapipe_image(img_path="D:\FAll_2023\project\pipeline\\test\img1.jpg", show_img=True, save_img=True):
     # STEP 2: Create an PoseLandmarker object.
     base_options = python.BaseOptions(model_asset_path='./mediapipe/pose_landmarker.task')
     options = vision.PoseLandmarkerOptions(

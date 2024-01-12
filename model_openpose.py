@@ -31,7 +31,7 @@ def model_openpose(openPoseExePath,VidPath):
         ):  # NOTE - build some list of 'synced video names' and check against that
             print("OpenPosing: ", thisVidPath.name)
             outvidname += 1
-            vidPath = openPoseDataPath /"output"/ thisVidPath.stem
+            vidPath = openPoseDataPath /"openpose_output"/ thisVidPath.stem
             jsonPath = vidPath / "json"
             jsonPath.mkdir(
                 parents=True, exist_ok=True

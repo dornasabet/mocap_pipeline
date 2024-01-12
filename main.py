@@ -34,7 +34,7 @@ def main():
         openpose_exe_path = Path(r"F:\UoA\IDEALab\MMC_models\openpose1.6")
         vid_path = Path(str(args.vid_path))
         model_openpose(openPoseExePath=openpose_exe_path, VidPath=vid_path)
-#s
+
 if __name__ == '__main__':
     print("*******")
     main()
